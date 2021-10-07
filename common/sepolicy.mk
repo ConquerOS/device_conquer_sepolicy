@@ -12,15 +12,15 @@ endif
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/conquer/sepolicy/common/public
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/conquer/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/conquer/sepolicy/common/dynamic
 
 ifneq ($(TARGET_HAL_POWER_RW_INPUT_DEVICE), true)
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/conquer/sepolicy/common/dynamic_extra
 endif
 else
