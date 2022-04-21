@@ -1,2 +1,0 @@
-# Allow LiveDisplay rw permissions for tuneable nodes
-allow hal_lineage_livedisplay_mediatek sysfs_livedisplay_tuneable:file rw_file_perms;
